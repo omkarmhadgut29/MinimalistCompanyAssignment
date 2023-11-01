@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+nav {
+    background-color: rgba(36, 36, 36, 0.269);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+.title {
+    margin-left: 50px;
+    font-size: 25px;
+    font-weight: bolder;
+    font-style: italic;
+    color: white;
+    text-shadow: 2px 2px 2px red;
+    padding-bottom: 10px;
+}
+
+header {
+    height: 320px;
+    background-image: url("./images/Beej-Patakha.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+
+.header-text {
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+.header-quick-view-btn {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.header-quick-view-btn>button {
+    font-size: 17px;
+    padding: 10px 20px;
+    background-color: white;
+    color: red;
+    border-radius: 2px;
+}
+
+.about_section,
+.products_section {
+    text-align: center;
+}
+
+.about_heading,
+.products_heading {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.horizontal_line {
+    height: 5px;
+    color: #f27121;
+    background-color: #f27121;
+    width: 100%;
+    margin: 0 80px;
+}
+
+.middle_text {
+    color: #f27121;
+    font-size: 20px;
+    font-weight: bold;
+    width: 351px;
+}
+
+.description {
+    max-width: 880px;
+    margin: 0px 100px;
+    line-height: 35px;
+}
+
+.description>.description_bold {
+    font-weight: bold;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+    padding: 10px;
+    border: solid 1px gray;
+}
+
+.card>img {
+    height: 300px;
+    width: 460px;
+}
+
+.card>div {
+    margin: 5px 0;
+}
+
+.card>div>.product_name {
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.quick_view_btn>button {
+    font-size: 17px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border-radius: 2px;
+}
+
+.end_line {
+    height: 5px;
+    color: #f27121;
+    background-color: #f27121;
+    width: 90%;
+    margin: 0 80px;
+}
+
+.yellow_line {
+    height: 5px;
+    color: #ece14c;
+    background-color: #ece14c;
+    width: 100%;
+}
+
+footer>.content {
+    background-color: #25a769;
+    color: #ece14c;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_img {
+    background-image: url("./images/footer_img.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 10px;
+    width: 55px;
+    height: 46px;
+}
+
+.icons {
+    display: flex;
+    margin-top: 5px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+.footer_text {
+    font-weight: bold;
+}
+
+.quickView {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quickView>.quickView-window {
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 80%;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.quickView-image>img {
+    object-fit: cover;
+    height: 450px;
+    width: 712px;
+}
+
+.orderDetails {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.orderHeading {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.orderMRP {
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 5px;
+}
+
+.orderDetails>hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: #f27121 1px solid;
+}
+
+.chooseNow {
+    width: 100%;
+    height: 60px;
+    background-color: red;
+    color: white;
+    border: none;
+    margin-top: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 2px;
+}

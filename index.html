@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireFly</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <!-- Navbar -->
+        <nav class=" ">
+            <div class="title">
+                FireFly
+            </div>
+        </nav>
+
+    </section>
+
+    <!-- Header -->
+    <header>
+        <div>
+            <div class="header-text">
+                <div>
+                    The choice is yours.
+                </div>
+                <div>Because they don&apos;t have one.</div>
+            </div>
+
+            <div class="header-quick-view-btn">
+                <button onclick="quickViewBtnClick()">QUICK VIEW</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- About section -->
+    <section class="about_section">
+        <div class="about_heading">
+            <div class="horizontal_line"></div>
+            <div class="middle_text">About</div>
+            <div class="horizontal_line"></div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <img src="./images/Frame.png" alt="Frame">
+            <div class="description">
+                Our products are crafted exclusively from the dreams and screams of young kids who wanted to show their
+                mastery in their chosen fields, but were directed towards a factory for daily wages. Each cracker bursts
+                brighter than their lost smiles, and can be heard louder than their cries for miles. Buy them, burst
+                them,
+                brag about them.
+                <div class="description_bold">The choice is yours. Because they don&apos;t have one.</div>
+            </div>
+            <img src="./images/Frame.png" alt="Frame">
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products_section">
+        <div class="products_heading">
+            <div class="horizontal_line"></div>
+            <div class="middle_text">Our products</div>
+            <div class="horizontal_line"></div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <div class="card">
+                <img src="./images/products.png" alt="products">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div class="product_name">Raju Rassibomb</div>
+                    <div>
+                        <div class="quick_view_btn">
+                            <button onclick="quickViewBtnClick()">QUICK VIEW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/products.png" alt="products">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div class="product_name">Ladiyon ki Rani Chani</div>
+                    <div>
+                        <div class="quick_view_btn">
+                            <button class="quickViewBtn"
+                                onclick="quickViewBtnClick('Ladiyon ki Rani Chani', 'Ladiyon ki Dreams/-')">QUICK
+                                VIEW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="margin: 40px 20px;">
+        <div class=" end_line"></div>
+    </div>
+
+    <footer>
+        <div class="yellow_line"></div>
+        <div class="content">
+            <div class="footer_img"></div>
+            <div class="footer_mid">
+                <div class="footer_text">
+                    Follow us on
+                </div>
+                <div class="icons">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="./images/001-instagram.png" class="icon" alt="001-instagram">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="./images/002-youtube.png" class="icon" alt="002-youtube">
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                        <img src="./images/003-twitter.png" class="icon" alt="003-twitter">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="./images/004-facebook.png" class="icon" alt="004-facebook">
+                    </a>
+                    <a href="https://www.linkedin.com/in/omkar-mhadgut-7451a3227/" target="_blank">
+                        <img src="./images/005-linkedin.png" class="icon" alt="005-linkedin">
+                    </a>
+                </div>
+            </div>
+            <div class="footer_img"></div>
+        </div>
+        <div class="yellow_line"></div>
+    </footer>
+
+    <!-- Quick View -->
+    <div class="quickView hidden" id="quickView">
+        <div class="quickView-window">
+            <div class="quickView-image">
+                <img src="./images/quick_view_image.png" alt="Beej-Patakha1" height="500px" width="500px">
+
+                <div style="display: flex; padding-top: 10px;">
+                    <img src="./images/quickView-image1.png" alt="quickView-image1">
+                    <img src="./images/quickView-image2.png" alt="quickView-image2" style="padding-left: 10px;">
+                    <img src="./images/quickView-image3.png" alt="quickView-image3" style="padding-left: 10px;">
+                    <img src="./images/quickView-image4.png" alt="quickView-image4" style="padding-left: 10px;">
+                </div>
+            </div>
+
+            <!-- Order Details -->
+            <div class="orderDetails">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div class="orderHeading">Raju Rassibomb</div>
+                    <span class="close" onclick="closeQuickView()">&times;</span>
+                </div>
+                <div>
+                    <div style="font-size: 20px;">MRP:</div>
+                    <div class="orderMRP">Raju&apos;s Dreams/-</div>
+                </div>
+                <hr>
+                <div>
+                    <div style="font-weight: bold; padding-bottom: 10px;">Product Description:</div>
+                    <div style="line-height: 20px;">This product packs an extra punch, thanks to the literal blood,
+                        sweat and tears of a young boy.
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <div style="font-weight: bold; padding-bottom: 10px;">Product Contents:</div>
+                    <div style="line-height: 20px;">
+                        <div>
+                            <img src="./images/star.png" alt="star">
+                            10 hand-hurting pieces of rassi bombs
+                        </div>
+                        <div>
+                            <img src="./images/star.png" alt="star">
+                            Jilled with great pain
+                        </div>
+                        <div>
+                            <img src="./images/star.png" alt="star">
+                            Raju&apos;s hopes
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <div style="font-weight: bold; padding-bottom: 10px;">Shipping Time:</div>
+                    <div>Before Raju understands that his dreams do not matter.</div>
+
+                </div>
+                <button class="chooseNow">Choose Now</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
